@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: none;
+}
+body {
+  background-color: #f8fafc;
+  margin: 0px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #293033;
+  height: 60px;
+  border-bottom: solid #5eead4 4px;
+}
+nav h1 {
+  margin: 0;
+  padding-left: 10px;
+  min-width: 350px;
+}
+#navbarLinksContainer {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 250px;
+}
+nav #signInNavBar {
+  color: #5eead4;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav #craeteAccountNavBar {
+  color: rgb(182, 174, 174);
+  padding-left: 11px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav #craeteAccountNavBar:hover {
+  color: #5eead4;
+}
+main {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 90vh;
+  width: 100vw;
+
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+#loginBox {
+  background-color: white;
+  border: solid #0d9488 4px;
+  min-height: 500px;
+  width: 450px;
+  border-radius: 40px;
+}
+#loginHeader {
+  color: black;
+  padding-top: 20px;
+  text-align: center;
+}
+#guid {
+  margin-left: 0.5vw;
+  color: gray;
+}
+.loginBox .guid {
+  color: gray;
+}
+.input {
+  margin-left: 1vw;
+  margin-top: 10px;
+  transition: 0.05s 0.05s;
+}
+label {
+  display: inline-block;
+  margin-top: 2vh;
+  margin-left: 0.5vw;
+}
+#keepMeSignedInCheckBox {
+  display: inline-block;
+  margin-top: 4vh;
+  margin-left: 1.4vw;
+}
+#SignInButton {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 250px;
+}
+#registerFromHereLink {
+  display: inline-block;
+  color: #0d9488;
+  margin-left: 2vw;
+  text-decoration: none;
+  margin-top: 10px;
+}
+#registerFromHereLink:hover {
+  color: #10b7a9;
+}
+#passwordErrorMessage , #emailErrorMessage {
+  color: red;
+  margin-left: 0.2vw;
+  z-index: 2;
+}

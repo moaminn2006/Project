@@ -1,0 +1,16 @@
+.btn{
+    display: block;
+    font-size: 1.7rem;
+    background-color: #0D9488;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.btn:hover {
+    
+    background-color:#10ada0;
+  
+}
+.btn:active{
+    scale: 0.9;
+}

@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: none;
+}
+:root {
+  --dark-slate: #293033;
+  --deep-teal: #0d9488;
+  --mint-teal: #5eead4;
+  --page-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border-color: #cbd5e1;
+  --warning-text: #b45309;
+  --warning-bg: #fef3c7;
+  --success-bg: #ccfbf1;
+}
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+  justify-content: space-between;
+  color: white;
+  background-color: #293033;
+  height: 60px;
+  border-bottom: solid #5eead4 4px;
+}
+nav h1 {
+  margin: 0;
+  padding-left: 10px;
+  min-width: 350px;
+}
+#navbarLinksContainer {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 250px;
+}
+nav #signInNavBar {
+  color: #5eead4;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav #createAccountNavBar {
+  color: rgb(182, 174, 174);
+  padding-left: 11px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav #createAccountNavBar:hover {
+  color: #5eead4;
+}
+
+/* -------------------------------- */
+
+.register-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #293033;
+  font-family: Arial, sans-serif;
+  padding: 35px 15px;
+}
+
+.register-title {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.register-subtitle {
+  margin: 0 0 25px;
+  text-align: center;
+  color: #64748b;
+}
+
+/* 2. REGISTRATION CARD */
+
+.register-form {
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background-color: white;
+  border: solid #0d9488 4px;
+  border-radius: 40px;
+}
+
+/* 3. INPUTS AND SELECT */
+
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 8px;
+
+  background-color: #eeeeef;
+  border: 0.5px solid #898b8d;
+  border-radius: 10px;
+
+  color: #293033;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.register-input::placeholder {
+  color: #747474;
+}
+
+.register-input:focus,
+.register-select:focus {
+  outline: none;
+  background-color: #ffffff;
+  border: 1.5px solid #0D9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.25);
+}
+
+/* 4. ERROR MESSAGES */
+
+.error-text {
+  margin: -8px 0 0;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.success-message {
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto 15px;
+  padding: 12px;
+
+  background-color: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 5. CREATE ACCOUNT BUTTON */
+
+.register-button {
+  margin-top: 8px;
+  padding: 14px;
+
+  background-color: #0d9488;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-button:hover {
+  background-color: #0f766e;
+}
+
+.register-button:focus-visible {
+  outline: 2px solid #293033;
+  outline-offset: 2px;
+}
+
+#loginFromHereLink {
+  display: inline-block;
+  color: #0d9488;
+  margin-left: 2vw;
+  text-decoration: none;
+  margin-top: 10px;
+}
+#loginFromHereLink:hover {
+  color: #10b7a9;
+}
+/* 6. LOGIN LINK 
+
+.login-link {
+  margin: 5px 0 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #0d9488;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+*/
+/* 7. RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .register-container {
+    padding: 20px 10px;
+  }
+
+  .register-title {
+    font-size: 26px;
+  }
+
+  .register-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .success-message {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.inputField {
+    background-color:#eeeeef;
+    border: 0.1vw #64748b solid;
+    border-radius: 5px;
+    height: 25px;
+    width: 400px;
+    font-size: 16px;
+}
+.inputField:focus {
+    outline: none ;
+    border: 0.2vw #0D9488 solid;
+}

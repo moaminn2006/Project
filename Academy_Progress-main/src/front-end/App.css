@@ -1,0 +1,37 @@
+:root {
+  --primary:#0D9488;
+  --primary-dark : #293033;
+  --highlight : #0D9488;
+  --background-color : #F8FAFC;
+  --warning-alert : #FEF3C7;
+  --warning-highlight : #B45309;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.student-card img,
+.placeholder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  background-color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+  font-size: 13px;
+}
